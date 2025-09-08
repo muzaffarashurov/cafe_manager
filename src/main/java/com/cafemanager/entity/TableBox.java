@@ -7,10 +7,10 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 @Entity
-@jakarta.persistence.Table(name = "tables")
+@Table(name = "tables")
 @NoArgsConstructor
 @Data
-public class Table {
+public class TableBox {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -34,7 +34,7 @@ public class Table {
 
     // Constructors
 
-    public Table(Integer tableNumber, Integer capacity) {
+    public TableBox(Integer tableNumber, Integer capacity) {
         this.tableNumber = tableNumber;
         this.capacity = capacity;
     }
